@@ -14,4 +14,4 @@ echo $file_path
 chmod +rwx $file_path
 
 # esecuzione 
-python3 Esame_AIeT_GabriciDavide.py
+python3 Esame_AIeT_GabriciDavide.py Nemo_6670.dat
