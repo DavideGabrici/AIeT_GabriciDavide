@@ -9,5 +9,11 @@ else
 	echo "Download Nemo_6670.dat fallito."
 fi
 
+export DATA_FILE_PATH=`pwd`/Nemo_6670.dat
+echo $DATA_FILE_PATH
+
+# permessi
+chmod +rwx $DATA_FILE_PATH 
+
 # esecuzione 
 python3 Esame_AIeT_GabriciDavide.py
