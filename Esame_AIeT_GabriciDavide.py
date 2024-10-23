@@ -2,12 +2,20 @@ from scipy.stats import gaussian_kde
 import numpy as np
 import matplotlib.pyplot as plt
 import statistics as stat
+import sys
 from matplotlib.lines import Line2D
 
 
-# caricamento dati
+
+# verifica se l'utente ha fornito il percorso del file
+if len(sys.argv) < 2:
+    print("Errore: Fornire il percorso del file come argomento.")
+    sys.exit(1)
 file_path = sys.argv[1]
-dati = file_path
+try:
+    dati = np.loadtxt(file_path)
+    
+# caricamento dati
 MsuH = dati[0]
 m_ini = dati[1]
 M_ass = dati[4]
