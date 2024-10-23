@@ -4,8 +4,10 @@ import matplotlib.pyplot as plt
 import statistics as stat
 from matplotlib.lines import Line2D
 
-# caricamento dati dal file
-file_path = '/Users/david/Desktop/Università/AbInfo/Nemo_6670.dat'
+
+# caricamento dati
+path = input('Copiare il path qui: ')
+file_path = str(path)
 dati = np.loadtxt(file_path, unpack=True)
 MsuH = dati[0]
 m_ini = dati[1]
