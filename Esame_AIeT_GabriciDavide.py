@@ -14,8 +14,6 @@ m_ini = dati[1]
 M_ass = dati[4]
 b_y = dati[8]
 age_parent = dati[12]
-a=0.65
-b=1.1
 
 
 # ====================================================================================================================================================================================================================================================================================================================
@@ -33,6 +31,8 @@ plt.title('Diagramma Hertzsprung-Russell')
 colori = ['darkred','orangered','sandybrown','gold','yellowgreen','lawngreen','forestgreen','lime','aquamarine','cyan','deepskyblue','royalblue','navy','blue','mediumslateblue','blueviolet','darkorcid','plum','purple','fuchsia','mediumvioletred','hotpink','pink']
 
 # costruzione gruppi d'età e etichette
+a = 0.65 # passi
+b = 1.1 # parametro per costruzione di intervalli non costanti
 for idx, j in enumerate(np.arange(0, 13, a)):
     if (j + a)**b < 14:
         gruppo = np.where((j**(b) < age_parent) & (age_parent <= (j + a)**(b)))[0]
