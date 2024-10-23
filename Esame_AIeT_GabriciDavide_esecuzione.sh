@@ -10,4 +10,4 @@ else
 fi
 
 # esecuzione 
-python3 Esame_AIeT_GabriciDavide.py Nemo_6670.dat
+python3 Esame_AIeT_GabriciDavide.py
