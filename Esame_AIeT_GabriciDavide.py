@@ -6,9 +6,8 @@ from matplotlib.lines import Line2D
 
 
 # caricamento dati
-path = input('Copiare il path qui: ')
-file_path = str(path)
-dati = np.loadtxt(file_path, unpack=True)
+file_path = sys.argv[1]
+dati = file_path
 MsuH = dati[0]
 m_ini = dati[1]
 M_ass = dati[4]
